@@ -1,0 +1,92 @@
+/**
+ * public/style.css
+ * Estilos customizados complementares ao Bootstrap 5
+ * FixDesk - Gestão de Ordens de Serviço
+ */
+
+:root {
+  --primary-color: #0d6efd;
+  --secondary-color: #6c757d;
+  --bg-subtle-card: #ffffff;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #212529;
+  background-color: #f4f6f9;
+}
+
+/* Navbar */
+.navbar-brand {
+  letter-spacing: -0.5px;
+}
+
+.fs-8 {
+  font-size: 0.75rem;
+}
+
+/* Cards de KPI */
+.card-kpi {
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 0.75rem;
+}
+
+.card-kpi:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.kpi-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+
+/* Tabela de Ordens de Serviço */
+#tabelaOS thead th {
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+  white-space: nowrap;
+}
+
+#tabelaOS tbody tr {
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+#tabelaOS tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.04);
+}
+
+/* Badges de Status Personalizadas */
+.badge-status-recebido {
+  background-color: #e2e3e5;
+  color: #41464b;
+  border: 1px solid #d3d6d8;
+}
+
+.badge-status-em-analise {
+  background-color: #cfe2ff;
+  color: #084298;
+  border: 1px solid #b6d4fe;
+}
+
+.badge-status-aguardando-peca {
+  background-color: #fff3cd;
+  color: #664d03;
+  border: 1px solid #ffecb5;
+}
+
+.badge-status-concluido {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+/* Responsividade garantida para todas as tabelas */
+.table-responsive {
+  border-radius: 0.5rem;
+}
+

@@ -1,0 +1,26 @@
+{
+  "name": "fixdesk",
+  "version": "1.0.0",
+  "description": "FixDesk - Sistema Web de Gestão de Ordens de Serviço (MVC + SQLite)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "ordem-de-servico",
+    "mvc",
+    "express",
+    "sqlite3",
+    "fullstack"
+  ],
+  "author": "Equipe FixDesk",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7"
+  }
+}
+
